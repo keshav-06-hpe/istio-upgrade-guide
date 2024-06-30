@@ -478,9 +478,9 @@ Events:
 We can see istio proxy version has been upgraded to 1.19.10
 
 #### REFERENCES
-https://istio.io/v1.19/docs/setup/upgrade/helm/
-https://istio.io/v1.12/docs/setup/install/helm/
-https://github.com/istio/istio/wiki/Troubleshooting-Istio#sidecar-injection
-https://istio.io/latest/blog/2019/data-plane-setup/
-https://medium.com/johnjjung/enabling-and-disabling-kubernetes-istio-sidecar-injections-426c5e7d4811
+- https://istio.io/v1.19/docs/setup/upgrade/helm/
+- https://istio.io/v1.12/docs/setup/install/helm/
+- https://github.com/istio/istio/wiki/Troubleshooting-Istio#sidecar-injection
+- https://istio.io/latest/blog/2019/data-plane-setup/
+- https://medium.com/johnjjung/enabling-and-disabling-kubernetes-istio-sidecar-injections-426c5e7d4811
 
