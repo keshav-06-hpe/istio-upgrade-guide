@@ -270,7 +270,8 @@ To get started, check out https://istio.io/latest/docs/setup/getting-started/
 `kubectl rollout restart deployment -n default`
 
 Check that Nginx Sidecar has changed
-`k describe po nginx-689f4b8c69-zwvkc            
+```sh
+kubectl describe po nginx-689f4b8c69-zwvkc            
 Name:         nginx-689f4b8c69-zwvkc
 Namespace:    default
 Priority:     0
@@ -473,4 +474,13 @@ Events:
   Normal   Created           35s                kubelet            Created container istio-proxy
   Normal   Started           35s                kubelet            Started container istio-proxy
   Warning  DNSConfigForming  32s (x6 over 38s)  kubelet            Search Line limits were exceeded, some search paths have been omitted, the applied search line is: default.svc.cluster.local svc.cluster.local cluster.local hpc.amslabs.hpecorp.net us.cray.com americas.cray.com
-`
+```
+We can see istio proxy version has been upgraded to 1.19.10
+
+#### REFERENCES
+https://istio.io/v1.19/docs/setup/upgrade/helm/
+https://istio.io/v1.12/docs/setup/install/helm/
+https://github.com/istio/istio/wiki/Troubleshooting-Istio#sidecar-injection
+https://istio.io/latest/blog/2019/data-plane-setup/
+https://medium.com/johnjjung/enabling-and-disabling-kubernetes-istio-sidecar-injections-426c5e7d4811
+
